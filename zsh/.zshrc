@@ -17,8 +17,11 @@ fi
 plugins=(git aws)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/zsh/.aliases
 source ~/.dotfiles/zsh/.exports
+source ~/.dotfiles/zsh/.aliases
+if [ -f ~/.dotfiles/zsh/.aliases.local ]; then
+    source ~/.dotfiles/zsh/.aliases.local
+fi
 
 # Setup asdf
 . $(brew --prefix asdf)/asdf.sh

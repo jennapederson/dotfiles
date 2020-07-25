@@ -1,2 +1,5 @@
 .zsh_history
 .zcompdump*
+
+# Aliases custom to this local machine
+zsh/.aliases.local
