@@ -1,9 +1,6 @@
 # Use main not master with all repos
 alias gi='git init && git symbolic-ref HEAD refs/heads/main'
 
-# Until git plugin is updated
-alias gcm='git checkout main'
-
 alias dev='cd ~/Development'
 alias jp='cd ~/Development/jennapederson'
 

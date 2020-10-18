@@ -14,7 +14,7 @@ if type brew &>/dev/null; then
   compinit
 fi
 
-plugins=(git aws)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/zsh/.exports
