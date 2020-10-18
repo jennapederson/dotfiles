@@ -6,3 +6,5 @@ alias gcm='git checkout main'
 
 alias dev='cd ~/Development'
 alias jp='cd ~/Development/jennapederson'
+
+alias start-http='python3 -m http.server'
