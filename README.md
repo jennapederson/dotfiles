@@ -22,7 +22,7 @@ ZDOTDIR=~/.dotfiles/zsh
 
 ### Local aliases
 
-Create the file `.aliases.local` (ignored by git) if you have custom aliases local to this machine.
+Create the file `.aliases.local` (ignored by git) if you have aliases custom to this machine.
 
 ```
 touch ~/.dotfiles/.aliases.local
