@@ -28,3 +28,4 @@ fi
 
 # Final path updates
 export PATH="$(yarn global bin):$PATH"
+export PATH="/usr/local:$PATH"
