@@ -2,7 +2,7 @@
 
 Clone this repo into a directory named `.dotfiles` in your home directory.
 
-git clone git@github.com:jennapederson/dotfiles.git .dotfiles
+`git clone git@github.com:jennapederson/dotfiles.git .dotfiles`
 
 ## ZSH
 

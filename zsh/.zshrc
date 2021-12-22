@@ -6,13 +6,6 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 COMPLETION_WAITING_DOTS="true"
-# To make Homebrew’s completions available
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
 
 plugins=(git)
 
@@ -21,6 +14,19 @@ source ~/.dotfiles/zsh/.exports
 source ~/.dotfiles/zsh/.aliases
 if [ -f ~/.dotfiles/zsh/.aliases.local ]; then
     source ~/.dotfiles/zsh/.aliases.local
+fi
+
+# Setup Homebrew
+if [ -f /opt/homebrew/bin/brew ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Make Homebrew’s completions available
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
 fi
 
 # Setup asdf
