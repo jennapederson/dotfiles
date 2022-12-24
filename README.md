@@ -6,13 +6,15 @@ Clone this repo into a directory named `.dotfiles` in your home directory.
 
 ## ZSH
 
-This relies on Catalina's default install of zsh with [Oh My Zsh](https://ohmyz.sh/) added in for more customizations.
+This relies on MacOS's default install of zsh, but you'll need to first install [Oh My Zsh](https://ohmyz.sh/) for more customizations.
 
-I have a `.zshenv` file in my home directory, which points to the dotfiles for zsh:
+Then, you'll need to create the `~/.zshenv` file and add the line below:
 
 ```
 ZDOTDIR=~/.dotfiles/zsh
 ```
+
+This environment file will automatically be sourced by the default zsh install and points to your custom .dotfiles for zsh.
 
 ### iTerm
 
