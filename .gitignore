@@ -1,5 +1,6 @@
 .zsh_history
 .zcompdump*
+.zsh_sessions
 
 # Aliases custom to this local machine
 zsh/.aliases.local
