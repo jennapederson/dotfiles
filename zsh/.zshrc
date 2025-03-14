@@ -15,6 +15,12 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Agnoster theme overrides - must come after ZSH_THEME and sourcing oh-my-zsh.sh
+prompt_dir() {
+  prompt_segment blue $CURRENT_FG '%1d'
+}
+
 source ~/.dotfiles/zsh/.exports
 source ~/.dotfiles/zsh/.aliases
 if [ -f ~/.dotfiles/zsh/.aliases.local ]; then
@@ -36,11 +42,6 @@ fi
 
 # Setup asdf
 # . $(brew --prefix asdf)/asdf.sh
-
-# Setup pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # Final path updates
 # export PATH="$(yarn global bin):$PATH"
