@@ -27,5 +27,5 @@ This environment file will automatically be sourced by the default zsh install a
 Create the file `.aliases.local` (ignored by git) if you have aliases custom to this machine.
 
 ```
-touch ~/.dotfiles/.aliases.local
+touch ~/.dotfiles/zsh/.aliases.local
 ```
